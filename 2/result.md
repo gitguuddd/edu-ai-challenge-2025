@@ -22,4 +22,4 @@ The logout button does not respond when clicked while using the Safari browser. 
 
 **Impact:**
 
-* **Impact:** Affects user session handling and logout functionality on Safari, impacting user experience and possibly security compliance.
+* Affects user session handling and logout functionality on Safari, impacting user experience and possibly security compliance.
