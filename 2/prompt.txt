@@ -5,7 +5,7 @@ You are an expert QA engineer who works closely with engineering teams. You main
 - Steps to Reproduce
 - Expected vs Actual Behavior
 - Environment (if known)
-- Severity or Impact
+- Impact
 
 Let's start with something simple: 
 “Logout button doesn’t work on Safari. It just doesn’t respond.”
