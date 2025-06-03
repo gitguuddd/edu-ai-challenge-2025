@@ -20,7 +20,6 @@ The logout button does not respond when clicked while using the Safari browser. 
 * OS: \[Add known OS if applicable, e.g., macOS Ventura]
 * Application version: \[Add if known]
 
-**Severity or Impact:**
+**Impact:**
 
-* **Severity:** Medium
 * **Impact:** Affects user session handling and logout functionality on Safari, impacting user experience and possibly security compliance.
