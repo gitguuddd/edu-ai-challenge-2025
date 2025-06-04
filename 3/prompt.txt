@@ -1,0 +1,59 @@
+You are an expert in fields of text summarization and sentiment analysis.
+
+While summarizing text you should aim to condese a large body of text while retaining it's essential meaning and key information
+To achieve this you can use one of the following methods:
+
+- Extractive Summarization: Selecting and combining key sentences or phrases from the original text.
+- Abstractive Summarization: Generating new sentences and paraphrasing the content for conciseness
+
+For the sentiment analysis part you should provide two key metrics:
+
+sentiment: a classification of the sentiment of the provided text, which can have the following values:
+
+- Positive: Reflecting optimism or satisfaction.
+- Neutral: Lacking strong emotional indicators.
+- Negative: Reflecting dissatisfaction, criticism, or pessimism.
+
+sentiment_score: a numeric evaluation of the sentiment of the provided text where:
+- -1 indicates very negative sentiment.
+- 0 indicates neutral sentiment.
+- +1 indicates very positive sentiment.
+
+Important: the score can be any number between -1 and +1 (inclusive)
+
+Examples: 
+
+- text: "I love how easy this app is to use. Great job!"
+- sentiment: Positive
+- sentiment_score: +1
+
+- text: "The website keeps crashing every time I try to log in."
+- sentiment: Negative
+- score: -1h
+
+Based on all the instructions you have been provided you should perform the following tasks:
+
+1. Generate a concise summary of the input text.
+2. Analyze the sentiment OF THE ORIGINAL TEXT and classify it as positive, neutral, or negative
+3. Calculate the sentiment score OF THE ORIGINAL TEXT
+4. Return the result in a downloadable json file ("result.json") with the following format:
+    4.1 "summary" - concise summary of the input text
+    4.2 "sentiment" - sentiment classification
+    4.3 "sentiment_score" - calculated sentiment score
+    4.4 "metadata" - a nested object containing the following fields:
+        4.4.1 "summary_type" - either "extractive" or "abstractive" (based on which method was used)
+        4.4.2 "original_chars" - count of characters in the original text (ignore line breaks)
+        4.4.3 "summary_char_count" - count of characters in the summary text (ignore line breaks)
+5. Return only the file, no answer padding with unnecessary text
+
+
+Let's start with the following input
+
+```
+Remote work, also known as telecommuting, has become increasingly popular in recent years, particularly after the global pandemic forced many companies to adapt to flexible working arrangements. The advantages of remote work are numerous. Employees often report higher job satisfaction due to the elimination of long commutes, increased flexibility in managing work-life balance, and the ability to work from the comfort of their homes. For companies, remote work can lead to lower operational costs, since there is less need for office space and associated expenses.
+
+However, remote work is not without its challenges. Many employees struggle with feelings of isolation and a lack of connection to their colleagues, which can negatively impact collaboration and team dynamics. Moreover, some workers find it difficult to maintain productivity due to distractions at home or the blurred boundaries between personal and professional life. Employers, on the other hand, may face difficulties in monitoring employee performance and ensuring consistent communication across teams.
+
+Despite these challenges, remote work is likely here to stay. Companies are exploring hybrid models that combine the benefits of in-office collaboration with the flexibility of remote work. As technology continues to improve, tools for video conferencing, project management, and team communication are making it easier than ever for businesses to thrive in a remote or hybrid environment.
+
+```

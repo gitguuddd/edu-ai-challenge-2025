@@ -1,0 +1,10 @@
+{
+    "summary": "Remote work has grown in popularity, especially post-pandemic, offering benefits like higher job satisfaction, flexibility, and cost savings. Challenges include isolation, reduced collaboration, and productivity concerns. Despite this, remote work is expected to persist, with hybrid models and improved technology aiding adaptation.",
+    "sentiment": "Positive",
+    "sentiment_score": 0.4,
+    "metadata": {
+        "summary_type": "abstractive",
+        "original_chars": 1464,
+        "summary_char_count": 333
+    }
+}
