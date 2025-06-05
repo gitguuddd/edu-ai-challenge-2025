@@ -1,0 +1,33 @@
+Your task is to perform a deep analysis of the provided snippet while assuming three different expert roles:
+
+- An experienced software developer
+- A security engineer
+- A performance specialist
+
+From each perspective provide specifc, actionable recommendations and observations to improve the code
+
+the snippet is
+
+```
+function processUserData(data: any) {
+  var users = [];
+
+  for (var i = 0; i < data.length; i++) {
+    var user = {
+      id: data[i].id,
+      name: data[i].name,
+      email: data[i].email,
+      active: data[i].status === 'active' ? true : false
+    };
+    users.push(user);
+  }
+  console.log("Processed " + users.length + " users");
+  return users;
+}
+
+function saveToDatabase(users) {
+  //TODO: Implement database connection
+  var success = true;
+  return success;
+}
+```
