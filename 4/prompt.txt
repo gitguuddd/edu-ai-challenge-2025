@@ -1,4 +1,4 @@
-Your task is to perform a deep analysis of the provided snippet while assuming three different exper roles:
+Your task is to perform a deep analysis of the provided snippet while assuming three different expert roles:
 
 - An experienced software developer
 - A security engineer
