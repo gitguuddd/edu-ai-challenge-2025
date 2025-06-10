@@ -1,0 +1,15 @@
+{
+  "name": "edu_ai_challenge_task_6",
+  "version": "1.0.0",
+  "description": "Enigma machine fix",
+  "main": "enigma.js",
+  "scripts": {
+    "start": "node enigma.js",
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^30.0.0"
+  }
+}
