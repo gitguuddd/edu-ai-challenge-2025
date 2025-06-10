@@ -75,6 +75,7 @@ class Enigma {
       c = this.rotors[i].backward(c);
     }
 
+    c = plugboardSwap(c, this.plugboardPairs);
     return c;
   }
   process(text) {
@@ -121,3 +122,15 @@ function promptEnigma() {
 if (require.main === module) {
   promptEnigma();
 }
+
+// Export for testing
+module.exports = {
+  mod,
+  plugboardSwap,
+  Rotor,
+  Enigma,
+  ROTORS,
+  REFLECTOR,
+  alphabet,
+  promptEnigma
+};
