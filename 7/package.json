@@ -1,0 +1,17 @@
+{
+  "name": "seabattle-modernized",
+  "version": "1.0.0",
+  "description": "Modernized version of the classic Seabattle game",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node seabattle.js",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
+  },
+  "keywords": ["game", "seabattle", "battleship", "console"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
