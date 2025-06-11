@@ -1,0 +1,11 @@
+{
+  "name": "seabattle",
+  "version": "1.0.0",
+  "description": "A refactored version of seabattle app",
+  "main": "seabattle.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
+}
