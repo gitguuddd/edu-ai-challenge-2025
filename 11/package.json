@@ -1,0 +1,18 @@
+{
+  "name": "audio_transcriber",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "get-audio-duration": "^4.0.1",
+    "openai": "^5.3.0",
+    "zod": "^3.25.64"
+  }
+}
